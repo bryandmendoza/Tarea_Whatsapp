@@ -10,7 +10,11 @@
 
     <color name="bg1">#FFFFFF</color>
     <color name="n_bg1">#21262c</color>
+    <color name="n_bg2">#101d25</color>
     <color name="txt1">#B6B6B6</color>
     <color name="txt2">#51CD5E</color>
-    <color name="n_txt2">#FFFFFF</color>
+    <color name="txt3">#FFFFFF</color>
+    <color name="txt4">#00b09c</color>
+    <color name="toolbar1">#065e54</color>
+    <color name="n_toolbar1">#21262c</color>
 </resources>

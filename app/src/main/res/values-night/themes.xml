@@ -10,13 +10,20 @@
         <item name="colorSecondaryVariant">@color/teal_200</item>
         <item name="colorOnSecondary">@color/black</item>
         <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">@color/n_bg1</item>
+        <item name="android:statusBarColor" tools:targetApi="l">@color/n_toolbar1</item>
 
         <!-- Pantalla Bienvenida -->
         <item name="pbBackground">@color/n_bg1</item>
         <item name="pbLogo">@drawable/night_logo</item>
         <item name="pbTxt1">@color/txt1</item>
-        <item name="pbTxt2">@color/n_txt2</item>
+        <item name="pbTxt2">@color/txt3</item>
+
+        <!-- Pantalla Principal -->
+        <item name="ppBackground">@color/n_bg2</item>
+        <item name="ppToolbar">@color/n_toolbar1</item>
+        <item name="ppTxt1">@color/txt1</item>
+        <item name="ppTxt2">@color/txt4</item>
+        <item name="ppTxt3">@color/txt1</item>
 
     </style>
 </resources>

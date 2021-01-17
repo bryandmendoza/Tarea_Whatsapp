@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <attr name="pbBackground" format="reference" />
+    <attr name="ppBackground" format="reference" />
     <attr name="pbLogo" format="reference" />
+    <attr name="ppToolbar" format="reference" />
     <attr name="pbTxt1" format="reference" />
     <attr name="pbTxt2" format="reference" />
+    <attr name="ppTxt1" format="reference" />
+    <attr name="ppTxt2" format="reference" />
+    <attr name="ppTxt3" format="reference" />
 </resources>
