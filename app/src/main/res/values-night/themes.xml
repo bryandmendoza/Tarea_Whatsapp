@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TareaWhatsapp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/n_bg1</item>
+
+        <!-- Pantalla Bienvenida -->
+        <item name="pbBackground">@color/n_bg1</item>
+        <item name="pbLogo">@drawable/night_logo</item>
+        <item name="pbTxt1">@color/txt1</item>
+        <item name="pbTxt2">@color/n_txt2</item>
+
+    </style>
+</resources>
