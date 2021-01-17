@@ -10,6 +10,7 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -33,6 +34,22 @@ public class PantallaPrincipal extends AppCompatActivity {
         configurarViewPager(binding.viewPgr1);
         binding.tbLyt1.setupWithViewPager(binding.viewPgr1);
         setSupportActionBar(binding.toolbar1);
+        binding.viewPgr1.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+            @Override
+            public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
+
+            }
+
+            @Override
+            public void onPageSelected(int position) {
+                cambiarIconoBotonFlotante(position);
+            }
+
+            @Override
+            public void onPageScrollStateChanged(int state) {
+
+            }
+        });
     }
 
     private void configurarViewPager(ViewPager viewPager) {
@@ -90,5 +107,27 @@ public class PantallaPrincipal extends AppCompatActivity {
                 Toast.makeText(PantallaPrincipal.this, "Las opciones no están disponibles", Toast.LENGTH_LONG).show(); break;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    private void cambiarIconoBotonFlotante(final int i) {
+        binding.fbAction1.hide();
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                switch (i) {
+                    case 0:
+                        binding.fbAction1.setImageDrawable(getDrawable(R.drawable.ic_baseline_message_24));
+                        break;
+                    case 1:
+                        binding.fbAction1.setImageDrawable(getDrawable(R.drawable.ic_baseline_camera_alt_24));
+                        break;
+                    case 2:
+                        binding.fbAction1.setImageDrawable(getDrawable(R.drawable.ic_baseline_add_ic_call_24));
+                        break;
+                }
+                binding.fbAction1.show();
+            }
+        }, 10);
+
     }
 }
