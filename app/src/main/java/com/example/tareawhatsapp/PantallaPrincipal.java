@@ -10,6 +10,9 @@ import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.example.tareawhatsapp.databinding.ActivityPantallaPrincipalBinding;
 import com.example.tareawhatsapp.fragmentos.Chats;
@@ -29,6 +32,7 @@ public class PantallaPrincipal extends AppCompatActivity {
         binding = DataBindingUtil.setContentView(this, R.layout.activity_pantalla_principal);
         configurarViewPager(binding.viewPgr1);
         binding.tbLyt1.setupWithViewPager(binding.viewPgr1);
+        setSupportActionBar(binding.toolbar1);
     }
 
     private void configurarViewPager(ViewPager viewPager) {
@@ -68,5 +72,23 @@ public class PantallaPrincipal extends AppCompatActivity {
         public int getCount() {
             return listaFragmentos.size();
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_principal,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.menuitemBuscar:
+                Toast.makeText(PantallaPrincipal.this, "La búsqueda no está disponible", Toast.LENGTH_LONG).show(); break;
+            case R.id.menuitemOpciones:
+                Toast.makeText(PantallaPrincipal.this, "Las opciones no están disponibles", Toast.LENGTH_LONG).show(); break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
