@@ -24,6 +24,7 @@
         <item name="ppTxt1">@color/txt3</item>
         <item name="ppTxt2">@color/txt3</item>
         <item name="ppTxt3">@color/txt1</item>
+        <item name="ppTxt4">@color/black</item>
 
     </style>
 </resources>

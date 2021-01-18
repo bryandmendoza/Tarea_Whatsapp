@@ -9,4 +9,5 @@
     <attr name="ppTxt1" format="reference" />
     <attr name="ppTxt2" format="reference" />
     <attr name="ppTxt3" format="reference" />
+    <attr name="ppTxt4" format="reference" />
 </resources>
