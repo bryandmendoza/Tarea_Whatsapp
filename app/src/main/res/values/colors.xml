@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="bg1">#FFFFFF</color>
+    <color name="bg2">#f4f4f4</color>
     <color name="n_bg1">#21262c</color>
     <color name="n_bg2">#101d25</color>
     <color name="txt1">#B6B6B6</color>

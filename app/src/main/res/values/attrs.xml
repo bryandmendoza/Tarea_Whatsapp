@@ -2,6 +2,7 @@
 <resources>
     <attr name="pbBackground" format="reference" />
     <attr name="ppBackground" format="reference" />
+    <attr name="statusBackground" format="reference" />
     <attr name="pbLogo" format="reference" />
     <attr name="ppToolbar" format="reference" />
     <attr name="pbTxt1" format="reference" />

@@ -20,6 +20,7 @@
 
         <!-- Pantalla Principal -->
         <item name="ppBackground">@color/n_bg2</item>
+        <item name="statusBackground">@color/n_bg2</item>
         <item name="ppToolbar">@color/n_toolbar1</item>
         <item name="ppTxt1">@color/txt1</item>
         <item name="ppTxt2">@color/txt4</item>
