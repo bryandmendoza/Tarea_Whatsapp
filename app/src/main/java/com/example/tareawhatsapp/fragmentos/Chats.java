@@ -42,11 +42,11 @@ public class Chats extends Fragment {
 
     private void getListaChat() {
         lista.clear();
-        lista.add(new ListaChat("1", "Ericka Vélez", "Hola 1", "6:12 p. m.",
+        lista.add(new ListaChat("1", "Ericka Vélez", "Hola ¿qué tal?", "6:12 p. m.",
                 "https://imagenes.extra.ec/files/image_full/files/fp/uploads/2020/07/27/5f1f1d20d5b1d.r_d.576-381-0.jpeg"));
-        lista.add(new ListaChat("2", "Scarlett Johansson", "Hola 2", "Ayer",
+        lista.add(new ListaChat("2", "Scarlett Johansson", "Ey! Me llamas!", "Ayer",
                 "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/11/19/15741684944100.jpg"));
-        lista.add(new ListaChat("3", "Elizabeth Olsen", "Hola 3", "16/1/2021",
+        lista.add(new ListaChat("3", "Elizabeth Olsen", "Si, estuvo genial el concierto", "16/1/2021",
                 "https://pley.today/__export/1585158659786/sites/mui/img/2020/03/25/elizabeth-olsen.jpg_1827958188.jpg"));
         recyclerView.setAdapter(new AdaptadorListaChat(lista, getContext()));
     }
